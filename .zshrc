@@ -9,7 +9,8 @@ export ZSH="/home/daniel/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
@@ -95,7 +96,6 @@ export ARCHIVOS='ranger'
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
 
 # Alias
 alias cat="cat" \
@@ -109,7 +109,7 @@ alias cat="cat" \
 	 x="sxiv -f" \
 	 i3rc="$EDITOR ~/.config/i3/config" \
 	 zrc="$EDITOR ~/.zshrc"\
-         gdfiles="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+         gdfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 
 # colores en less > y por lo tanto en man
@@ -120,8 +120,3 @@ export LESS_TERMCAP_se=$'\E[0m'
 export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
-
-
-
-# lfs 9.1 variables 12-4-20
-export LFS='/mnt/lfs'
