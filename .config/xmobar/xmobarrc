@@ -1,0 +1,40 @@
+Config { font = "xft:TerminessTTF Nerd Font:pixelsize=18:antialias=true:hinting=true,FontAwesome:pixelsize=18"
+       , additionalFonts = []
+       , borderColor = "#073642"
+       , border = TopB
+--       , bgColor = "#002b36"
+       , bgColor = "#073642"
+--       , fgColor = "#839496"
+       , fgColor = "#fdf6e3"
+       , alpha = 255
+       , position = Top
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = False
+       , hideOnStart = False
+       , iconRoot = "."
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [ Run Weather "SAEZ" ["-t","T° en la plata: <tempC>C°",
+                                          "-L","18","-H","25",
+                                          "--normal","green",
+                                          "--high","red",
+                                          "--low","cyan"] 36000
+                    , Run Network "enp0s3" ["-L","0","-H","32",
+                                          "--normal","green","--high","red"] 10
+                    , Run Cpu ["-L","3","-H","50",
+                               "--normal","green","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Com "uname" ["-s","-r"] "" 36000
+                   --  Fecha y hora, hubo que usar ""=localtime del sistema  en vez de Ame../Arg../Bueno..
+                   --  que por algun motivo no funciona, ciudades del tipo Europe/Ciudad si funcionan.
+                    , Run DateZone "%a %_d de %b %H:%M:%S" "es_AR.UTF-8" "" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% } %cpu% | %memory% | %enp0s3% \
+                    \{ %date% | %SAEZ% | %uname%"
+       }
