@@ -9,8 +9,8 @@ export ZSH="/home/daniel/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="agnoster"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
+#ZSH_THEME="random"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Set list of themes to pick from when loading at random
@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-#plugins=(git)
+plugins=(archlinux web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 export NAVEGADOR='firefox'
 export VISUAL='vim'
-export TERMINAL='uxrvt'
+export TERMINAL='alacritty'
 export LECTOR='mupdf'
 export ARCHIVOS='ranger'
 
@@ -98,17 +98,19 @@ export ARCHIVOS='ranger'
 # For a full list of active aliases, run `alias`.
 
 # Alias
-alias cat="cat" \
+alias cat="ccat" \
 	 rd="rm -Rfv" \
 	 pacman="sudo pacman" \
 	 psyu="pacman -Syu" \
-	 ls="ls -F --color=tty --group-directories-first" \
+	 ls="exa -abghlS --group-directories-first --color-scale" \
 	 ed="$EDITOR" \
 	 ff="$NAVEGADOR" \
 	 leer="$LECTOR" \
 	 x="sxiv -f" \
 	 i3rc="$EDITOR ~/.config/i3/config" \
-	 zrc="$EDITOR ~/.zshrc"\
+	 xmrc="$EDITOR ~/.xmonad/xmonad.hs" \
+	 zrc="$EDITOR ~/.zshrc" \
+	 termrc="$EDITOR ~/.config/alacritty/alacritty.yml" \
          gdfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 
