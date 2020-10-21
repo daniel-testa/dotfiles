@@ -34,8 +34,8 @@ font:
   size: 17.0
     # Espaciador, x: entre letras y: entre lineas
   offset:
-    x: -1
-    y: -1
+    x: 0
+    y: 1
     # Ubica el caracter en su celda, +x der -x izq, +y arriba -y abajo
   glyph_offset:
     x: 0
