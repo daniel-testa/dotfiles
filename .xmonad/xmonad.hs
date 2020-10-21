@@ -38,8 +38,8 @@ myFocusedBorderColor = "#cb4b16"
 
 
 ----     ESCRITORIOS    ----
-   
-myWorkspaces = [ "cli", "web", "sys" ] ++ map show [4..9]
+
+myWorkspaces = [ " <fn=0>\xf489 </fn> ", " <fn=0>\xf269 </fn> ", " <fn=0>\xf185 </fn> " ] ++ map show [4..9]
 
 
 ----     ATAJOS DE TECLADO    ----
