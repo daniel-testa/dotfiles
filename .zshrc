@@ -62,15 +62,15 @@ ZSH_THEME="agnoster"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
+HISTSIZE=1000
+HISTFILE=~/.config/zsh/history
+SAVEHIST=1000
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(archlinux web-search)
 
 source $ZSH/oh-my-zsh.sh
@@ -82,16 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export EDITOR='vim'
-export NAVEGADOR='firefox'
-export VISUAL='vim'
-export TERMINAL='alacritty'
-export LECTOR='mupdf'
-export ARCHIVOS='ranger'
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -102,7 +92,7 @@ alias cat="ccat" \
 	 rd="rm -Rfv" \
 	 pacman="sudo pacman" \
 	 psyu="pacman -Syu" \
-	 ls="exa -abghlS --group-directories-first --color-scale" \
+	 ls="exa -abghS --group-directories-first --color-scale" \
 	 ed="$EDITOR" \
 	 ff="$NAVEGADOR" \
 	 leer="$LECTOR" \
@@ -112,13 +102,3 @@ alias cat="ccat" \
 	 zrc="$EDITOR ~/.zshrc" \
 	 termrc="$EDITOR ~/.config/alacritty/alacritty.yml" \
          gdfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-
-
-# colores en less > y por lo tanto en man
-export LESS_TERMCAP_mb=$'\E[01;31m'
-export LESS_TERMCAP_md=$'\E[01;31m'
-export LESS_TERMCAP_me=$'\E[0m'
-export LESS_TERMCAP_se=$'\E[0m'
-export LESS_TERMCAP_so=$'\E[01;44;33m'
-export LESS_TERMCAP_ue=$'\E[0m'
-export LESS_TERMCAP_us=$'\E[01;32m'

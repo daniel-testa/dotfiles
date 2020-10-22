@@ -39,7 +39,9 @@ myFocusedBorderColor = "#cb4b16"
 
 ----     ESCRITORIOS    ----
 
-myWorkspaces = [ " <fn=0>\xf489 </fn> ", " <fn=0>\xf269 </fn> ", " <fn=0>\xf185 </fn> " ] ++ map show [4..9]
+-- <fn=0>\xf269 </fn> icono firefox
+
+myWorkspaces = [ " <fn=0>\xf489 </fn> ", " <fn=0>\xfa87 </fn> ", " <fn=0>\xe799 </fn> " ] ++ map show [4..9]
 
 
 ----     ATAJOS DE TECLADO    ----
@@ -54,11 +56,15 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_n     ), refresh)              -- Volver al tamano normal
     , ((modm,               xK_Tab   ), windows W.focusDown)  -- Foco en siguiente
     , ((modm,               xK_j     ), windows W.focusDown)  -- Foco en siguiente
+    , ((modm,               xK_Down  ), windows W.focusDown)  -- Foco en siguiente
     , ((modm,               xK_k     ), windows W.focusUp  )  -- Foco en anterior
-    , ((modm,               xK_m     ), windows W.focusMaster  ) -- Focon en Master
+    , ((modm,               xK_Up    ), windows W.focusUp  )  -- Foco en anterior
+    , ((modm,               xK_m     ), windows W.focusMaster  ) -- Foco en Master
     , ((modm .|. shiftMask, xK_Return), windows W.swapMaster) -- Intercambia Foco <-> Master
     , ((modm .|. shiftMask, xK_j     ), windows W.swapDown  ) -- Intercambia Foco <-> Siguiente
+    , ((modm .|. shiftMask, xK_Down  ), windows W.swapDown  ) -- Intercambia Foco <-> Siguiente
     , ((modm .|. shiftMask, xK_k     ), windows W.swapUp    ) -- Intercambia Foco <-> Anterior
+    , ((modm .|. shiftMask, xK_Up    ), windows W.swapUp    ) -- Intercambia Foco <-> Anterior
     , ((modm,               xK_h     ), sendMessage Shrink)   -- Achica Master
     , ((modm,               xK_l     ), sendMessage Expand)   -- Agranda Master
     , ((modm,               xK_t     ), withFocused $ windows . W.sink) -- Vuelve la ventana a mosaico
