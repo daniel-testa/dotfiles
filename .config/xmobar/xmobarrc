@@ -1,13 +1,11 @@
-Config { font = "xft:TerminessTTF Nerd Font:pixelsize=14:antialias=true:hinting=true,FontAwesome:pixelsize=14"
+Config { font = "xft:TerminessTTF Nerd Font:pixelsize=14:antialias=true:hinting=true,FontAwesome:pixelsize=18"
        , additionalFonts = []
-       , borderColor = "#073642"
-       , border = TopB
---       , bgColor = "#002b36"
-       , bgColor = "#073642"
---       , fgColor = "#839496"
-       , fgColor = "#fdf6e3"
+--       , borderColor = "#073642"
+--       , border = TopB
+       , bgColor = "#002b36"
+       , fgColor = "#91a1a1"
        , alpha = 255
-       , position = Top
+       , position = Static { xpos = 0 , ypos = 0, width = 1920, height = 18 }
        , textOffset = -1
        , iconOffset = -1
        , lowerOnStart = True
@@ -17,21 +15,30 @@ Config { font = "xft:TerminessTTF Nerd Font:pixelsize=14:antialias=true:hinting=
        , iconRoot = "."
        , allDesktops = True
        , overrideRedirect = True
-       , commands = [ Run Weather "SAEZ" ["-t","<tempC> C°","-L","18","-H","25","--normal","green","--high","red","--low","cyan"] 36000
-                    , Run Network "eno1" ["-t", "<fn=0>\xf176</fn><rx>kb  <fn=0>\xf175</fn><tx>kb"] 20
-                    , Run Cpu ["-t", "<fn=0>\xf986 </fn> <total>%","-L","3","-H","50","--normal","green","--high","red"] 10
-		    , Run Memory ["-t","<fn=0>\xe266 </fn> <usedratio>%"] 10
-                    , Run DateZone "<fn=0>\xf073 </fn> %a %_d de %b" "es_AR.UTF-8" "" "fecha" 10
+       , commands = [ Run Weather "SAEZ" ["-t"," <tempC> C"] 36000
+                    , Run Network "eno1" ["-t", "<rx>kb <tx>kb"] 20
+                    , Run Cpu ["-t", "閭 <total>%","-L","3","-H","50","--normal","green","--high","red"] 10
+		    , Run Memory ["-t","  <usedratio>%"] 10
+                    , Run DateZone "  %a %_d de %b" "es_AR.UTF-8" "" "fecha" 10
                     , Run DateZone "%H:%M:%S" "es_AR.UTF-8" "" "hora" 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %StdinReader% } %cpu% : %memory% : %eno1% { %SAEZ% : %fecha% : <fc=#859900>%hora%</fc> "
+       , template = " %StdinReader% }{<fc=#268bd2,#002b46></fc><fc=#fdf6e3,#268bd2> %cpu% : %memory% : %eno1% </fc><fc=#586e75,#268bd2></fc><fc=#fdf6e3,#586e75>  %SAEZ% </fc><fc=#073642,#586e75></fc><fc=#eee8d5,#073642> %fecha% </fc><fc=#002b36,#073642></fc><fc=#93a1a1,#002b36> %hora%</fc> "
        }
-
+-- <fc=fgcolor,bgcolor></fc>
 --  <fn=0>\xf0aa </fn>  
 --  <fn=0>\xf8ab </fn> 
 --  <fn=0>\xf176 </fn> 
 --  <fn=0>\xf175 </fn> 
 --  <fn=0>\xf108 </fn>  
+--  <fn=0>\xfa03 </fn> 糖 
+--  <fn=0>\xf986 </fn> 閭
+--  <fn=0>\xe266 </fn>  
+--  \xe350 
+--  \xf073   
+--  \xe0b0  
+--  \xe0b1 
+--  uxe0b2 
+--  \xe0b3 

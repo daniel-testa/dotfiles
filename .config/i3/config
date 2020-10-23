@@ -11,7 +11,7 @@
 set $mod Mod4
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Cantarell 11
+font pango:Noto Sans 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -35,7 +35,7 @@ set $right semicolon
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+	bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -188,12 +188,13 @@ gaps outer 5
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
-	font pango:Droid Sans 10
+        status_command i3blocks
+	font pango:Noto Sans 10
 	position top
 	mode dock
 	modifier None
 	tray_output primary
 }
-exec /usr/bin/feh --bg-fill ~/fondos/wall.pg
-exec /usr/bin/compton --config ~/.config/i3/compton.conf
+exec "setxkbmap -layout latam,es"
+exec /usr/bin/feh --bg-fill ~/fondos/010.jpg
+exec /usr/bin/picom -b #--config ~/.config/i3/picom.conf

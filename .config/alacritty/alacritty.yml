@@ -21,7 +21,7 @@ scrolling:
 font:
   normal:
     family: TerminessTTF Nerd Font
-    style: Regular
+    style: Bold
   bold:
     family: TerminessTTF Nerd Font
     style: Bold
@@ -31,11 +31,11 @@ font:
   bold_italic:
     family: TerminessTTF Nerd Font
     style: Bold Italic
-  size: 17.0
+  size: 12.0
     # Espaciador, x: entre letras y: entre lineas
   offset:
     x: 0
-    y: 1
+    y: 0
     # Ubica el caracter en su celda, +x der -x izq, +y arriba -y abajo
   glyph_offset:
     x: 0

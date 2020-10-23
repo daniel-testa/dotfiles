@@ -10,6 +10,7 @@ import System.Exit
 import System.IO
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
+import XMonad.Layout.Spacing
 import XMonad.Util.EZConfig(additionalKeys)
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.SpawnOnce
@@ -30,11 +31,11 @@ myBorderWidth :: Dimension
 myBorderWidth = 2
 
 myNormalBorderColor :: String
-myNormalBorderColor = "#b58900"
+myNormalBorderColor = "#839496"
 
 
 myFocusedBorderColor :: String
-myFocusedBorderColor = "#cb4b16"
+myFocusedBorderColor = "#268bd2"
 
 
 ----     ESCRITORIOS    ----
@@ -97,7 +98,7 @@ myMouse (XConfig {XMonad.modMask = modm}) = M.fromList $
 
 myLayout = avoidStruts (tiled ||| Mirror tiled ||| Full)
   where
-     tiled   = Tall nmaster delta ratio -- Algoritmo predeterminado, divide la pantalla en dos paneles
+     tiled   =  spacing 10 $ Tall nmaster delta ratio -- Algoritmo predeterminado, divide la pantalla en dos paneles
      nmaster = 1  -- Numero predeterminado de ventanas en el area Master
      ratio   = 1/2 -- Proporcion predeterminada de pantalla ocupada por Master
      delta   = 3/100 -- % de pantalla a incrementar al cambiar de tamano
