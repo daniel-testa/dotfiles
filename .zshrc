@@ -93,6 +93,7 @@ alias cat="ccat" \
 	 pacman="sudo pacman" \
 	 psyu="pacman -Syu" \
 	 ls="exa -abghS --group-directories-first --color-scale" \
+	 lsg="exa -abghS --group-directories-first --color-scale --grid" \
 	 ed="$EDITOR" \
 	 ff="$NAVEGADOR" \
 	 leer="$LECTOR" \

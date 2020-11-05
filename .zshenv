@@ -6,6 +6,7 @@
 
 export EDITOR='vim'
 export NAVEGADOR='firefox'
+export BROWSER='firefox'
 export VISUAL='vim'
 export TERMINAL='alacritty'
 export LECTOR='mupdf'

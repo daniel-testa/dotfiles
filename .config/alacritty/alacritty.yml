@@ -1272,7 +1272,7 @@ colors:
 ####################### Estilo del cursor #######################
 ###### Stile: ####### Block ###### Beam ###### Underline ########
 cursor:
-  style: Beam
+  style: Block
   #vi_mode_style: None
   #unfocused_hollow: true
   #thickness: 0.15
