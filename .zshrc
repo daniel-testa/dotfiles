@@ -71,7 +71,7 @@ SAVEHIST=1000
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(archlinux web-search)
+plugins=(archlinux web-search command-not-found)
 
 source $ZSH/oh-my-zsh.sh
 
