@@ -71,7 +71,7 @@ SAVEHIST=1000
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(archlinux web-search command-not-found)
+plugins=(archlinux colorize zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,8 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # Alias
-alias cat="ccat" \
-	 rd="rm -Rfv" \
+alias rd="rm -Rfv" \
 	 pacman="sudo pacman" \
 	 psyu="pacman -Syu" \
 	 ls="exa -abghS --group-directories-first --color-scale" \

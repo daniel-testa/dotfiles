@@ -1,14 +1,40 @@
 """""""""""""""""""""""""""""""
 """ daniel testa 27-06-2019 """
 """""""""""""""""""""""""""""""
+set nocompatible              " be iMproved, necesario 
+filetype off                  " necesario
+
+" establece la ruta para incluir e iniciar Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()             " necesario, los plugins deben aparecer después de esta línea.
+
+Plugin 'gmarik/Vundle.vim'      " vundle
+Plugin 'ap/vim-css-color'       " Color previews for CSS
+
+call vundle#end()		" necesario, los plugins deben aparecer antes de esta línea.
+
+filetype plugin indent on       " necesario
+
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+" 
+" Brief help
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+"
+" see :h vundle for more detailsd or wiki for FAQ
+" Put your non-Plugin stuff after this line
 
 
-" Usar configuracion por defecto /usr/share/vim/vim81/defaults.vim
+" Usar configuracion por defecto /usr/share/vim/vim82/defaults.vim
 source $VIMRUNTIME/defaults.vim
-
+au BufNewFile,BufRead *xmobarrc  setf haskell
 set number
 set relativenumber
-
+highlight Comment cterm=italic
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
@@ -17,11 +43,6 @@ else
   if has('persistent_undo')
     set undofile	" keep an undo file (undo changes after closing)
   endif
-endif
-
-if &t_Co > 2 || has("gui_running")
-  " Switch on highlighting the last used search pattern.
-  set hlsearch
 endif
 
 " Add optional packages.

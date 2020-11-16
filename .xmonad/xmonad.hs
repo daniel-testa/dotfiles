@@ -133,7 +133,8 @@ myKeys :: [(String, X ())]
 myKeys =
     -- programas 
         [ ("M-<Return>", spawn myTerminal)
-        , ("M-p", spawn "dmenu_run")
+        , ("M-d", spawn "dmenu_run")
+        , ("M-r", spawn "rofi -show-icons -show drun")
         , ("M-f", spawn "firefox")
         , ("C-S-<Escape>", spawn "alacritty -e htop")
         , ("M-S-m", spawn "alacritty --class=Cmus,Cmus -e cmus")
@@ -241,6 +242,7 @@ myManageHook = composeAll
     ,(className =? "firefox" <&&> resource =? "Dialog")    --> doFloat
     ,(className =? "firefox" <&&> resource =? "Toolkit")    --> doFloat -- firefox PIP flotante 
     , className =? "TeamViewer"    --> shiftAndFollow "5" <+> doFloat
+    , title =? "Oracle VM VirtualBox Administrador"    --> shiftAndFollow "6" <+> doFloat
     , className =? "dolphin"    --> shiftAndFollow "6" <+> doFloat
     , className =? "Nitrogen"    --> doCenterFloat
     , className =? "Nm-connection-editor"    --> doCenterFloat
