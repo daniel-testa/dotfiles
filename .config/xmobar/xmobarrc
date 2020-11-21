@@ -1,7 +1,7 @@
 Config { font            = "xft:NotoSans Nerd Font:pixelsize=14:antialias=true:hinting=true,TerminessTTF Nerd Font:pixelsize=18:antialias=true:hinting=true"
        , additionalFonts = [ "xft:TerminessTTF Nerd Font:pixelsize=18:antialias=true:hinting=true"
                            , "xft:Font Awesome 5 Free Solid:pixelsize=18"
-                           , "xft:TerminessTTF Nerd Font:pixelsize=20:antialias=true:hinting=true"
+                           , "xft:NotoSans Nerd Font:pixelsize=28:antialias=true:hinting=true"
                            ]
 --       , borderColor = "#073642"
 --       , border = TopB
@@ -11,7 +11,7 @@ Config { font            = "xft:NotoSans Nerd Font:pixelsize=14:antialias=true:h
        , position = Static { xpos = 0 , ypos = 0, width = 1920, height = 18 }
 --       , position = Top
        , textOffset  = 15
-       , textOffsets = [15, 16]
+       , textOffsets = [15, 16, 20]
        , lowerOnStart = True
        , pickBroadest = False
        , persistent = False
@@ -30,7 +30,7 @@ Config { font            = "xft:NotoSans Nerd Font:pixelsize=14:antialias=true:h
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " <fc=#6c71c4><fn=1> </fn></fc>  %StdinReader%<fc=#268bd2>  </fc> }\
+       , template = " <fc=#6c71c4><fn=3></fn></fc>  %StdinReader%<fc=#268bd2>  </fc> }\
                     \{<fc=#6c71c4,#002b46></fc><fc=#fdf6e3,#6c71c4> %cpu% %memory% %eno1% %disku%</fc><fc=#586e75,#6c71c4></fc><fc=#fdf6e3,#586e75>%SAEZ%</fc><fc=#073642,#586e75></fc><fc=#eee8d5,#073642> <action=`alacritty -e htop`>%fecha%</action></fc><fc=#002b36,#073642></fc><fc=#93a1a1,#002b36>%hora%</fc> "
        }
 
@@ -50,5 +50,5 @@ Config { font            = "xft:NotoSans Nerd Font:pixelsize=14:antialias=true:h
 --  \xe0b1 
 --  \xe0b2 
 --  \xe0b3 
---  \xe677  (no se puede usar en xmobar por algún misterioso motivo) 
+--  \xe777  
 --  \xe712   

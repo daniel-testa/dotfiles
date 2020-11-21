@@ -3,6 +3,9 @@
 # desabilitado en pc de escritorio uso sddm
 #[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 
+# agregar $HOME/.local/bin a la variable PATH
+path+=('/home/daniel/.local/bin')
+export PATH
 
 export EDITOR='vim'
 export NAVEGADOR='firefox'
