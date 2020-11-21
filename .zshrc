@@ -71,7 +71,8 @@ SAVEHIST=1000
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-plugins=(archlinux colorize zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(archlinux colorize)
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
 
