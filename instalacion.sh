@@ -46,7 +46,7 @@ sleep 1
 
 ############# eliminar dotfiles viejos o del sistema
 mkdir $HOME/backup 
-mv -rf $HOME/.config $HOME/.xmonad $HOME/.oh-my.zsh $HOME/fondos $HOME/.dotfiles .bashrc .zshrc .zshenv .Xauthority .xinitrc .vimrc $HOME/backup
+mv $HOME/.config $HOME/.xmonad $HOME/.oh-my.zsh $HOME/fondos $HOME/.dotfiles .bashrc .zshrc .zshenv .Xauthority .xinitrc .vimrc $HOME/backup
 
 ############# clonar  dotfiles  ##################
 
