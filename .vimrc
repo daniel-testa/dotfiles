@@ -11,6 +11,7 @@ call vundle#begin()             " necesario, los plugins deben aparecer después
 
 Plugin 'gmarik/Vundle.vim'      " vundle
 Plugin 'ap/vim-css-color'       " Color previews for CSS
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()		" necesario, los plugins deben aparecer antes de esta línea.
 

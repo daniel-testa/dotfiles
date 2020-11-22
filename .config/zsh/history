@@ -9351,3 +9351,285 @@ FIN
 : 1606006707:0;l .config/zsh/history
 : 1606006716:0;vim .config/zsh/history
 : 1606006808:0;gdfiles add .config/zsh
+: 1606006837:0;gdfiles commit -m "nada que ver"
+: 1606006844:0;gdfiles push
+: 1606006873:0;l
+: 1606006879:0;cd .local
+: 1606006883:0;bin
+: 1606006884:0;l
+: 1606006891:0;./dmenu_daniel
+: 1606006896:0;clear
+: 1606006898:0;cd
+: 1606006899:0;l
+: 1606006910:0;pacman -Qe
+: 1606006939:0;vim .vimrc
+: 1606015237:0;cd .vim
+: 1606015238:0;l
+: 1606015248:0;cd bundle
+: 1606015249:0;l
+: 1606015251:0;..
+: 1606015259:0;mv bundle vundle
+: 1606015260:0;l
+: 1606015262:0;cd
+: 1606015266:0;vim .vimrc
+: 1606015524:0;cd .vim
+: 1606015525:0;l
+: 1606015539:0;car .netrwhist
+: 1606015545:0;cat .netrwhist
+: 1606015562:0;cd bundle
+: 1606015563:0;lk
+: 1606015564:0;l
+: 1606015567:0;..
+: 1606015569:0;cd vundle
+: 1606015570:0;l
+: 1606015575:0;..
+: 1606015581:0;cd .vim
+: 1606015596:0;rm -rf bundle vundle 
+: 1606015598:0;l
+: 1606015603:0;rm .netrwhist
+: 1606015606:0;..
+: 1606015619:0;yay -S vundle.git
+: 1606015633:0;yay -S vundle-git
+: 1606015666:0;l
+: 1606015670:0;cd go
+: 1606015671:0;l
+: 1606015674:0;cd pkg
+: 1606015674:0;l
+: 1606015676:0;cd mod
+: 1606015677:0;l
+: 1606015682:0;cd cache
+: 1606015683:0;l
+: 1606015685:0;cd download
+: 1606015686:0;l
+: 1606015690:0;cd github.com
+: 1606015691:0;l
+: 1606015696:0;du -h
+: 1606015712:0;..
+: 1606015714:0;du -h
+: 1606015717:0;..
+: 1606015718:0;du -h
+: 1606015720:0;..
+: 1606015722:0;du -h
+: 1606015728:0;..
+: 1606015729:0;l
+: 1606015739:0;..
+: 1606015740:0;l
+: 1606015758:0;cd .vim
+: 1606015759:0;l
+: 1606015780:0;..
+: 1606015788:0;cd VirtualBox\ VMs
+: 1606015789:0;l
+: 1606015793:0;cd openmediavault
+: 1606015793:0;l
+: 1606015797:0;..
+: 1606015800:0;cledar
+: 1606015801:0;clear
+: 1606015802:0;l
+: 1606015825:0;xmrc
+: 1606015869:0;echo $path
+: 1606015873:0;clear
+: 1606015897:0;man zshbuiltins
+: 1606015947:0;clear
+: 1606015975:0;cd .config/
+: 1606015978:0;l
+: 1606016006:0;neofetch
+: 1606016025:0;neofetch --help
+: 1606016086:0;neofetch --ascii_distro windows10
+: 1606016090:0;neofetch --ascii_distro arco
+: 1606016096:0;neofetch --ascii_distro linuz
+: 1606016101:0;neofetch --ascii_distro arcolinux
+: 1606016107:0;neofetch --ascii_distro archlinux
+: 1606016112:0;neofetch --ascii_distro 
+: 1606016121:0;neofetch --ascii_distro knopix
+: 1606016184:0;neofetch --ascii_distro macos
+: 1606016190:0;neofetch --ascii_distro arch
+: 1606016194:0;neofetch --ascii_distro archbox
+: 1606016198:0;neofetch --ascii_distro arco
+: 1606016201:0;neofetch --ascii_distro arch
+: 1606016206:0;clear
+: 1606016224:0;vf
+: 1606016231:0;lf --help
+: 1606016237:0;lf -doc
+: 1606016266:0;lf -doc>>lf.txt|vim
+: 1606016281:0;lf -doc>>lf.txt&&vim lf.txt
+: 1606016322:0;l
+: 1606016331:0;rm lf.txt
+: 1606016332:0;l
+: 1606016335:0;man lf
+: 1606016366:0;clear
+: 1606016367:0;..
+: 1606016374:0;vim .vim
+: 1606016383:0;vim .vimrc
+: 1606016420:0;cd .vim
+: 1606016420:0;l
+: 1606016423:0;cd bundle
+: 1606016423:0;l
+: 1606016428:0;cd YouCompleteMe
+: 1606016429:0;l
+: 1606016435:0;..
+: 1606016574:0;vim .vimrc instalacion.sh vertical 30
+: 1606016596:0;killall vim
+: 1606016608:0;cd .vim/bundle/YouCompleteMe
+: 1606016608:0;l
+: 1606016625:0;./install.py --all
+: 1606016633:0;pacman -S cmake
+: 1606016878:0;sudo reflector --latest 200 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+: 1606016885:0;sreflector
+: 1606016887:0;reflector
+: 1606016892:0;pacman -S reflector
+: 1606016896:0;sudo reflector --latest 200 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+: 1606016947:0;tail /etc/pacman.d/mirrorlist
+: 1606016958:0;paman -Syyuu
+: 1606016962:0;pacman -Syyuu
+: 1606017038:0;sudo vim /etc/pacman.conf
+: 1606017059:0;sudo vim /etc/makepkg.conf
+: 1606017085:0;pacman -Syyuu
+: 1606017098:0;pacman -Ss cmake
+: 1606017109:0;pacman -S cmake
+: 1606017121:0;./install.py --all
+: 1606017146:0;cd .vim/bundle/YouCompleteMe/l
+: 1606017149:0;cd .vim/bundle/YouCompleteMe/
+: 1606017150:0;l
+: 1606017189:0;cd doc
+: 1606017190:0;l
+: 1606017199:0;ccat youcompleteme.txt
+: 1606017238:0;vim install.py
+: 1606017345:0;vim youcompleteme.txt
+: 1606017355:0;vim doc/youcompleteme.txt
+: 1606017447:0;./install.py --clangd-completer
+: 1606017481:0;vim azure-pipelines.yml
+: 1606017498:0;zrc
+: 1606018418:0;pinf exa
+: 1606018423:0;alias
+: 1606018497:0;alias pins
+: 1606018499:0;alias pinf
+: 1606018503:0;l
+: 1606018518:0;source .zshrc
+: 1606018522:0;pinf 
+: 1606018528:0;zrc
+: 1606018534:0;vim .zshrc
+: 1606018574:0;pupd
+: 1606018581:0;pinf exa
+: 1606018622:0;pinf exa|cut --
+: 1606018658:0;pinf exa|cut -d "URL"
+: 1606018667:0;cut help
+: 1606018673:0;cut --help
+: 1606018697:0;man cut
+: 1606018743:0;pinf exa|cut -c "URL"
+: 1606018748:0;pinf exa|cut -c URL
+: 1606018755:0;man cut
+: 1606019081:0;pinf exa|grep URL
+: 1606019249:0;pinf exa|grep URL|cut -d ':' -f 2
+: 1606019259:0;pinf exa|grep URL|cut -d ': ' -f 2
+: 1606019264:0;pinf exa|grep URL|cut -d ' ' -f 2
+: 1606019282:0;pinf exa|grep URL|cut -d -f 2
+: 1606019286:0;pinf exa|grep URL|cut -d: -f 2
+: 1606019437:0;pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
+: 1606019445:0;pacman -S fzf
+: 1606019448:0;pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'
+: 1606020515:0;pacman -Qtdq
+: 1606020558:0;pacman -Qtdq | pacman -Rns -
+: 1606020579:0;fg %sudo
+: 1606020592:0;sudo pacman -Qtdq | pacman -Rns -
+: 1606020614:0;clear
+: 1606020630:0;pacman -Qtdq
+: 1606020659:0;pacman -Rns alsa-plugins go guile2.0 libpwquality
+: 1606020698:0;clear
+: 1606021013:0;pacman -Qi vim | grep -Po '(?<=^Description).*' | sed "s/^\s*: //"
+: 1606021030:0;pacman -Qi vim | grep -Po '(?<=^Description).*'
+: 1606021071:0;pacman -Qi vim | grep -P '(?<=^Description).*'
+: 1606021091:0;pacman -Qi vim | grep "Description'
+: 1606021093:0;pacman -Qi vim | grep "Description"
+: 1606021098:0;pacman -Qi vim
+: 1606021114:0;pacman -Qi vim | grep -Po '(?<=^Descripción).*' | sed "s/^\s*: //"
+: 1606021127:0;pacman -Qi vim | grep -Po '(?<=^URL).*' | sed "s/^\s*: //"
+: 1606021147:0;pacman -Qi vim | grep URL | sed "s/^\s*: //"
+: 1606021178:0;pacman -Qi vim | grep URL
+: 1606021209:0;man sed
+: 1606021252:0;man awk
+: 1606021382:0;pacman -Qi vim | grep URl | awk $3
+: 1606021390:0;pacman -Qi vim | grep URl | awk '$3'
+: 1606021471:0;info awk
+: 1606021887:0;pacman -Qi vim | grep URl | awk '{ FS = ":" ; print $2 }'
+: 1606021894:0;pacman -Qi vim | grep URl | awk '{ FS = ":" ; print $1 }'
+: 1606021907:0;pacman -Qi vim | grep URl | awk 'FS = ":" ; print $1'
+: 1606021918:0;pacman -Qi vim | grep URl | awk '{ FS = ":" ; print $3 }'
+: 1606022134:0;pacman -Qi vim | grep URl | awk -F: ; print $3
+: 1606022149:0;man gawk
+: 1606022408:0;pacman -Qi vim | grep URl | wk '{print $1}'
+: 1606022412:0;pacman -Qi vim | grep URl | awk '{print $1}'
+: 1606022415:0;pacman -Qi vim | grep URl | awk '{print $2}'
+: 1606022420:0;pacman -Qi vim | grep URl | awk '{print $2}' -
+: 1606022423:0;pacman -Qi vim | grep URl | awk '{print $1}' -
+: 1606022432:0;pacman -Qi vim
+: 1606022437:0;pacman -Qi vim | grep URl
+: 1606022455:0;pacman -Qi vim | grep URL | awk $3
+: 1606022466:0;pacman -Qi vim | grep URL | awk -F: ; print $3
+: 1606022494:0;pacman -Qi vim | grep URL | awk -F: '{ print $3}'
+: 1606022497:0;pacman -Qi vim | grep URL | awk -F: '{ print $2}'
+: 1606022505:0;pacman -Qi vim | grep URL | awk -F: '{ print $2,3}'
+: 1606022514:0;pacman -Qi vim | grep URL | awk -F: '{ print $2$3}'
+: 1606022522:0;pacman -Qi vim | grep URL | awk -F: '{ print $2:$3}'
+: 1606022530:0;pacman -Qi vim | grep URL | awk -F: '{ print $2':'$3}'
+: 1606022547:0;pacman -Qi vim | grep URL | awk -F '{ print $2}'
+: 1606022549:0;pacman -Qi vim | grep URL | awk -F '{ print $2 }'
+: 1606022554:0;pacman -Qi vim | grep URL | awk -Fs '{ print $2 }'
+: 1606022561:0;pacman -Qi vim | grep URL | awk -Fh '{ print $2 }'
+: 1606022569:0;pacman -Qi vim | grep URL | awk -F h '{ print $2 }'
+: 1606022583:0;pacman -Qi vim | grep URL | awk -F' h' '{ print $2 }'
+: 1606022589:0;pacman -Qi vim | grep URL | awk -F ' ' '{ print $2 }'
+: 1606022596:0;pacman -Qi vim | grep URL | awk -F ' ''{ print $2 }'
+: 1606022601:0;pacman -Qi vim | grep URL | awk -F ' ' '{ print $3 }'
+: 1606022627:0;pacman -Qi vim | awk -F ' ' '{ print $3 }'
+: 1606022746:0;pacman -Qi vim | grep URL | awk -F ' ' '{ print $3 }'
+: 1606022756:0;pacman -Qi vim | grep URL | awk -F ' ' '{ print $3 }'|firefox
+: 1606022785:0;pacman -Qi vim | grep URL | awk -F ' ' '{ print $3 }'| ff -
+: 1606023032:0;/dev/fd/
+: 1606023042:0;/dev/fd/0
+: 1606023054:0;pacman -Qi vim | grep URL | awk -F ' ' '{ print $3 }'|firefox /dev/fd/0
+: 1606023068:0;pacman -Qi vim | grep URL | awk -F ' ' '{ print $3 }'
+: 1606023098:0;pacman -Q vim | grep URL | awk -F ' ' '{ print $3 }'
+: 1606023106:0;pacman -Qi  | grep URL | awk -F ' ' '{ print $3 }'
+: 1606023125:0;pacman -Qi | grep URL | awk -F ' ' '{ print $3 }'|less
+: 1606023139:0;pacman -Qi | grep URL | awk -F ' ' '{ print $1$2$3 }'|less
+: 1606023154:0;pacman -Qi | grep URL |less
+: 1606023197:0;pacman -Qi | grep URL | awk -F ' ' '{ print $3 }'| grep -i gitlab
+: 1606023252:0;pacman -Qi | grep URL | awk -F ' ' '{ print $3 }'
+: 1606023260:0;pacman -Qi zsh | grep URL | awk -F ' ' '{ print $3 }'
+: 1606023421:0;cd
+: 1606023458:0;echo "pacman -Qi zsh | grep URL | awk -F ' ' '{ print $3 }'">> get_URL && chmod +x get_URL
+: 1606023459:0;l
+: 1606023465:0;vim get_URL
+: 1606023547:0;./get_URL zsh
+: 1606023563:0;/bin/zsh
+: 1606023566:0;exit
+: 1606023577:0;vim get_URL
+: 1606023602:0;./get_URL zsh
+: 1606023618:0;url
+: 1606023621:0;urls
+: 1606023627:0;alias urls
+: 1606023683:0;firefox (./get_URL zsh)
+: 1606023689:0;firefox $(./get_URL zsh)
+: 1606023738:0;mv get_URL _url
+: 1606023739:0;lk
+: 1606023741:0;l
+: 1606023750:0;mv _url .local/bin
+: 1606023755:0;_url
+: 1606023767:0;_url exa
+: 1606023785:0;firefox $(_url exa)
+: 1606023829:0;exa --tree
+: 1606023844:0;exa --tree .config
+: 1606023890:0;tree
+: 1606023905:0;l
+: 1606023912:0;rm -rf go
+: 1606023919:0;sudo rm -rf go
+: 1606023921:0;l
+: 1606023923:0;go
+: 1606023929:0;clear
+: 1606023931:0;ll
+: 1606023950:0;gdfiles add .local/bin/_url
+: 1606023969:0;gdfiles commit -m "script"
+: 1606023974:0;gdfiles push
+: 1606023994:0;celar
+: 1606023996:0;clear
+: 1606024002:0;gdfiles add -u

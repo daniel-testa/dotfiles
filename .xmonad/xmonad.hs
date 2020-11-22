@@ -133,7 +133,7 @@ myKeys :: [(String, X ())]
 myKeys =
     -- programas 
         [ ("M-<Return>", spawn myTerminal)
-        , ("M-d", spawn "dmenu_run")
+        , ("M-d", spawn "dmenu_daniel")
         , ("M-r", spawn "rofi -show-icons -show drun")
         , ("M-f", spawn "firefox")
         , ("C-S-<Escape>", spawn "alacritty -e htop")

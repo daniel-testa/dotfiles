@@ -73,7 +73,6 @@ SAVEHIST=1000
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 plugins=(archlinux colorize)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -90,16 +89,27 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias
 alias rd="rm -Rfv" \
-	 pacman="sudo pacman" \
-	 psyu="pacman -Syu" \
-	 ls="exa -abghS --group-directories-first --color-scale" \
-	 lsg="exa -abghS --group-directories-first --color-scale --grid" \
+	 alrc="$EDITOR ~/.config/alacritty/alacritty.yml" \
 	 ed="$EDITOR" \
 	 ff="$NAVEGADOR" \
-	 leer="$LECTOR" \
-	 x="sxiv -f" \
+         gdfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
 	 i3rc="$EDITOR ~/.config/i3/config" \
+	 leer="$LECTOR" \
+	 ls="exa -abghS --group-directories-first --color-scale" \
+	 lsg="exa -abghS --group-directories-first --color-scale --grid" \
+	 pacman="sudo pacman" \
+	 pupd="pacman -Syyuu" \
+	 pinf="pacman -Si" \
+	 pins="pacman -S" \
+	 psea="pacman -Ss" \
+	 plis="pacman -Q" \
+	 x="sxiv -f" \
+	 xdrc="$EDITOR ~/.config/xmobar/xmobarrc" \
 	 xmrc="$EDITOR ~/.xmonad/xmonad.hs" \
+	 yupd="yay -Syyuu" \
+	 yinf="yay -Si" \
+	 yins="yay -S" \
+	 ysea="yay -Ss" \
+	 ylis="yay -Q" \
 	 zrc="$EDITOR ~/.zshrc" \
-	 termrc="$EDITOR ~/.config/alacritty/alacritty.yml" \
-         gdfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+	 zshe="$EDITOR ~/.zshenv"
