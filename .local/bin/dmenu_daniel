@@ -1,0 +1,4 @@
+#!/usr/bin/zsh
+
+# solo para simplificar el comando en xmobar.hs
+dmenu_run -i -p programa: -nb "#002b36" -nf "#6c71c4" -sb "#6c71c4" -sf "#002b36" -fn "NotoSans Nerd Font"
