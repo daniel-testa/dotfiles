@@ -9633,3 +9633,171 @@ FIN
 : 1606023994:0;celar
 : 1606023996:0;clear
 : 1606024002:0;gdfiles add -u
+: 1606024015:0;gdfiles commit -m "update"
+: 1606024022:0;gdfiles push
+: 1606024041:0;celar
+: 1606024043:0;clear
+: 1606024044:0;l
+: 1606024053:0;vim instalacion.sh
+: 1606104173:0;sensors
+: 1606104213:0;pacman -Qi qt5-sensors
+: 1606104218:0;pacman -Qil qt5-sensors
+: 1606104243:0;pacman -Qil qt5-sensors|grep /usr/bin
+: 1606104247:0;pacman -Qil qt5-sensors|grep /usr/include
+: 1606104261:0;pacman -Qil lm_sensors
+: 1606104310:0;fancontrol
+: 1606104317:0;fancontrol --help
+: 1606104321:0;man fancontrol
+: 1606104333:0;healthd
+: 1606104350:0;isadump
+: 1606104363:0;isaset
+: 1606104376:0;sensors-detect
+: 1606104382:0;cat sensors-detect
+: 1606104393:0;cat /usr/bin/sensors-detect
+: 1606104402:0;less /usr/bin/sensors-detect
+: 1606104451:0;sudo sensors-detect
+: 1606104633:0;sensors
+: 1606104665:0;yay -Ss paru
+: 1606104699:0;yay -S paru-bin --noconfirm
+: 1606104917:0;l .local/bin/dmenu_daniel
+: 1606104930:0;ccat .local/bin/dmenu_daniel
+: 1606104987:0;gdfiles add .local/bin/dmenu_daniel
+: 1606105008:0;gdfiles commit -m "dmenu_daniel"
+: 1606105023:0;gdfiles push
+: 1606105043:0;gdfiles add -u
+: 1606105049:0;gdfiles commit
+: 1606105074:0;gdfiles status
+: 1606105085:0;clear
+: 1606105095:0;man paru
+: 1606105117:0;paru Ss gigabyte
+: 1606105130:0;paru -Ss amd
+: 1606105139:0;paru -Ss ryzen 
+: 1606105153:0;paru -Ss ryzen |grep -i sensor
+: 1606105189:0;vim /etc/pacman.conf
+: 1606105208:0;clear
+: 1606105213:0;paru -Ss ryzen 
+: 1606105313:0;sudo updatedb
+: 1606105317:0;zsh
+: 1606105359:0;paru -Ss amd
+: 1606105378:0;paru -Ss amd|grep -i temp
+: 1606105432:0;paru -Ss amd|grep -C 4 -i sensor
+: 1606105467:0;paru -Ss amd|grep -C 4 -i temp
+: 1606105563:0;paru -Ss amd|grep -C 4 -i monitor
+: 1606105572:0;paru -Ss amd|grep -C 2 -i monitor
+: 1606105576:0;clear
+: 1606105578:0;paru -Ss amd|grep -C 2 -i monitor
+: 1606105634:0;paru -Ss zenmonitor
+: 1606105642:0;paru -S zenmonitor
+: 1606105790:0;zenmonitor
+: 1606105824:0;zenmonitor --help
+: 1606105844:0;zenmonitor -c
+: 1606105864:0;paru -Ss zen
+: 1606105869:0;clear
+: 1606105874:0;man paru
+: 1606105929:0;paru -Ss zen | grep -c2 -i amd
+: 1606105936:0;paru -Ss zen | grep -c7 -i amd
+: 1606105945:0;paru -Ss zen | grep C 2 -i amd
+: 1606105952:0;paru -Ss zen | grep -C 2 -i amd
+: 1606105998:0;pacman -Qi zenmonitor
+: 1606106002:0;pacman -Qil zenmonitor
+: 1606106019:0;pacman -Qil zenpower-dkms
+: 1606106085:0;lsmod | grep k10temp~
+: 1606106088:0;lsmod | grep k10temp
+: 1606106112:0;sudo modprobe -r k10temp
+: 1606106172:0;sudo modprobe zenpower
+: 1606106205:0;paru -Rsn zenmonitor
+: 1606106224:0;rebot
+: 1606106227:0;clear
+: 1606106326:0;sensors
+: 1606106376:0;pacman -Ss glances
+: 1606106384:0;pacman -S glances
+: 1606106390:0;clear
+: 1606106393:0;glances
+: 1606106454:0;sensors
+: 1606106575:0;pacman -S hardinfo
+: 1606106580:0;hardinfo
+: 1606106802:0;sudo hardinfo
+: 1606106914:0;clear
+: 1606106936:0;sensord
+: 1606106941:0;sudo sensord
+: 1606106945:0;sensors
+: 1606106964:0;clear
+: 1606107029:0;pacman -Q | grep ucode
+: 1606107152:0;pacman -S linux-headers
+: 1606107175:0;paru -S zenpower-dkms
+: 1606107204:0;reboot
+: 1606107740:0;sensors
+: 1606107754:0;glances
+: 1606107799:0;hardinfo
+: 1606107843:0;sensor
+: 1606107854:0;sensors --help
+: 1606107877:0;sensors --bus-list
+: 1606107892:0;sensors -u
+: 1606107912:0;sensors
+: 1606108016:0;pacman -Ql lm_sensors
+: 1606108109:0;paru -S zenmonitor
+: 1606108139:0;sudo zenmonitor
+: 1606108201:0;clear
+: 1606108256:0;sensors
+: 1606108263:0;sudo sensors
+: 1606108385:0;sensors
+: 1606108415:0;sensors | grep Tdie
+: 1606108465:0;sensors | grep Tdie | awk -F: '{ print $2 }'
+: 1606108479:0;sensors | grep Tdie | awk -F'' '{ print $2 }'
+: 1606108484:0;sensors | grep Tdie | awk -F '' '{ print $2 }'
+: 1606108488:0;sensors | grep Tdie | awk -F ' ' '{ print $2 }'
+: 1606108519:0;sensors | grep Tdie | awk -F ' ' '{ print $2 }' | echo "$1"
+: 1606108527:0;sensors | grep Tdie | awk -F ' ' '{ print $2 }' | echo "-"
+: 1606108530:0;sensors | grep Tdie | awk -F ' ' '{ print $2 }' | echo 
+: 1606108547:0;sensors | grep Tdie | awk -F ' ' '{ print $2 }'
+: 1606108877:0;sensors | tee 
+: 1606108908:0;sensors | tee grep Tdie grep Tctl
+: 1606108914:0;man tee
+: 1606108946:0;l
+: 1606108954:0;cat grep
+: 1606108961:0;cat Tctl
+: 1606108966:0;cat Tdie
+: 1606108975:0;rm grep Tctl Tdie 
+: 1606108977:0;l
+: 1606109000:0;man gre
+: 1606109003:0;man grep
+: 1606109145:0;sensors
+: 1606109175:0;sensors |  grep Tdie | awk -F ' ' '{ print $2 }'
+: 1606109185:0;sensors |  grep Tdie,Tctl | awk -F ' ' '{ print $2 }'
+: 1606109260:0;sensors |  grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }'
+: 1606109268:0;sensors
+: 1606109275:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }'
+: 1606109310:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print cpu $2 }'
+: 1606109322:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print 'cpu $2' }'
+: 1606109332:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print "cpu" $2 }'
+: 1606109343:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print "cpu " $2 }'
+: 1606109364:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c1
+: 1606109394:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c23456
+: 1606109399:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c2 3 4 5 6
+: 1606109409:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c2,3,4,5,6
+: 1606109416:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c2,3,4,5
+: 1606109426:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c2,3,4,5,6,7,8
+: 1606109428:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c2,3,4,5,6,7
+: 1606109432:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c2,3,4,5,6,7,8
+: 1606109446:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c{2..8}
+: 1606109453:0;man cuty
+: 1606109454:0;man cut
+: 1606109499:0;info cut
+: 1606109553:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c2-8
+: 1606109558:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c 2-8
+: 1606109585:0;sensors
+: 1606109602:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c 2-8
+: 1606109607:0;clear
+: 1606109616:0;pacman -Syyuu
+: 1606109634:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c 2-8
+: 1606109651:0;clear
+: 1606109653:0;l
+: 1606109693:0;mkdir .config/install
+: 1606109714:0;mv instalacion.sh .config/install
+: 1606109726:0;cd .config/install
+: 1606109727:0;l
+: 1606109736:0;chmod +x instalacion.sh
+: 1606109737:0;l
+: 1606109741:0;vim instalacion.sh
+: 1606109767:0;cd
+: 1606109781:0;gdfiles add -u
