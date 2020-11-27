@@ -9,7 +9,7 @@ sleep 1
 sudo pacman -Syyuu --needed --noconfirm alacritty dmenu exa  ttf-ubuntu-font-family \
 	firefox-i18n-es-ar git gtop htop lightdm lightdm-gtk-greeter \
 	lightdm-gtk-greeter-settings man-db man-pages mlocate networkmanager nitrogen \
-	picom powerline powerline-vim rofi vim wget xmobar xmonad xmonad-contrib \
+	picom powerline powerline-vim rofi rsync vim wget xmobar xmonad xmonad-contrib \
 	xorg-apps xorg-server xorg-xinit zathura zathura-pdf-mupdf zsh zsh-completions \
 	zsh-syntax-highlighting
 
@@ -43,10 +43,6 @@ paru -Syu -q --nocleanmenu --nodiffmenu --noupgrademenu --noeditmenu --noconfirm
 echo "...paquetes AUR instalados"
 sleep 1
 
-############# eliminar dotfiles viejos o del sistema
-mkdir $HOME/backup 
-mv $HOME/.config $HOME/.xmonad $HOME/.oh-my.zsh $HOME/fondos $HOME/.dotfiles .bashrc .zshrc .zshenv .Xauthority .xinitrc .vimrc $HOME/backup
-
 ############# clonar  dotfiles  ##################
 
 echo "...clonando dotfiles desde github:"
@@ -59,9 +55,20 @@ function gdfiles {
 	   /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
    }
 
+mkdir -p backup
 gdfiles checkout
 
-echo "...checkout correcto:"
+if [[ $? == 0 ]]
+then
+	echo "...checkout correcto:"
+else
+	echo "Haciendo copia de seguridad de  dot files preexistentes ."
+	sleep 1
+	gdfiles checkout 2>&1 | egrep "\s+\.|\/" | awk '{print $1}' | xargs -I '{}' rsync -a '{}' bkp/ && \
+		gdfiles	checkout 2>&1 | egrep "\s+\.|\/" | awk '{print $1}' | xargs -I '{}' rm -rf '{}' && \
+		gdfiles checkout
+		echo "...checkout correcto:"
+fi
 
 sleep 2
 
