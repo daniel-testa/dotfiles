@@ -10040,3 +10040,10 @@ FIN
 : 1606452974:0;mkdir test
 : 1606453001:0;gdfiles -add u
 : 1606453007:0;gdfiles add -u
+: 1606453011:0;gdfiles staus
+: 1606453013:0;gdfiles status
+: 1606453042:0;gdfiles commit -m "alias fix"
+: 1606453057:0;gdfiles checkout
+: 1606453087:0;gdfiles status
+: 1606453103:0;git add -u
+: 1606453114:0;gdfiles add -u
