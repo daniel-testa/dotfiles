@@ -25,20 +25,19 @@ echo "... Instalando yay-bin:"
 
 sleep 1
 
-mkdir tmp_yay && \
-       	cd tmp_yay && \
-	wget https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=yay-bin -O PKGBUILD && \
+mkdir tmp_paru && \
+       	cd tmp_paru && \
+	wget https://aur.archlinux.org/cgit/aur.git/plain/PKGBUILD?h=paru-bin -O PKGBUILD && \
 	makepkg -i --noconfirm --needed && \
 	cd .. && \
-	sudo rm -rf tmp_yay
-
+	sudo rm -rf tmp_paru
 
 ############ instalar paquetes desde AUR
 
 echo "... Instalando paquetes de AUR:"
 sleep 1
 
-yay -Syu -q --nocleanmenu --nodiffmenu --noupgrademenu --noeditmenu --noconfirm --needed exa nerd-fonts-iosevka nerd-fonts-mononoki nerd-fonts-noto-sans-regular-complete nerd-fonts-terminus ttf-font-awesome vundle
+paru -Syu -q --nocleanmenu --nodiffmenu --noupgrademenu --noeditmenu --noconfirm --needed exa nerd-fonts-iosevka nerd-fonts-mononoki nerd-fonts-noto-sans-regular-complete nerd-fonts-terminus ttf-font-awesome vundle
 
 
 echo "...paquetes AUR instalados"

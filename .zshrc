@@ -89,27 +89,31 @@ source $ZSH/oh-my-zsh.sh
 
 # Alias
 alias rd="rm -Rfv" \
-	 alrc="$EDITOR ~/.config/alacritty/alacritty.yml" \
-	 ed="$EDITOR" \
-	 ff="$NAVEGADOR" \
-         gdfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
-	 i3rc="$EDITOR ~/.config/i3/config" \
-	 leer="$LECTOR" \
-	 ls="exa -abghS --group-directories-first --color-scale" \
-	 lsg="exa -abghS --group-directories-first --color-scale --grid" \
-	 pacman="sudo pacman" \
-	 pupd="pacman -Syyuu" \
-	 pinf="pacman -Si" \
-	 pins="pacman -S" \
-	 psea="pacman -Ss" \
-	 plis="pacman -Q" \
-	 x="sxiv -f" \
-	 xdrc="$EDITOR ~/.config/xmobar/xmobarrc" \
-	 xmrc="$EDITOR ~/.xmonad/xmonad.hs" \
-	 yupd="yay -Syyuu" \
-	 yinf="yay -Si" \
-	 yins="yay -S" \
-	 ysea="yay -Ss" \
-	 ylis="yay -Q" \
-	 zrc="$EDITOR ~/.zshrc" \
-	 zshe="$EDITOR ~/.zshenv"
+	alrc="$EDITOR ~/.config/alacritty/alacritty.yml" \
+	aurupd="$AUR_HELPER -Syyuu" \
+	aurinf="$AUR_HELPER -Si" \
+	aurins="$AUR_HELPER -S" \
+	aursea="$AUR_HELPER -Ss" \
+	aurlis="$AUR_HELPER -Q" \
+	ed="$EDITOR" \
+	ff="$NAVEGADOR" \
+        gdfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
+	i3rc="$EDITOR ~/.config/i3/config" \
+	leer="$LECTOR" \
+	lss="exa" \
+	ls="lss -lhF --group-directories-first --color-scale" \
+	ll="ls -ag" \
+	la="ls -ag@" \
+	lsg="lss -ax --grid" \
+	pacman="sudo pacman" \
+	pupd="pacman -Syyuu" \
+	pinf="pacman -Si" \
+	pins="pacman -S" \
+	psea="pacman -Ss" \
+	plis="pacman -Q" \
+	tree="exa -alFT" \
+	x="sxiv -f" \
+	xdrc="$EDITOR ~/.config/xmobar/xmobarrc" \
+	xmrc="$EDITOR ~/.xmonad/xmonad.hs" \
+	zrc="$EDITOR ~/.zshrc" \
+	zshe="$EDITOR ~/.zshenv"

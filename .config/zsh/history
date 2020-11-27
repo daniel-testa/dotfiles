@@ -9801,3 +9801,242 @@ FIN
 : 1606109741:0;vim instalacion.sh
 : 1606109767:0;cd
 : 1606109781:0;gdfiles add -u
+: 1606109807:0;gdfiles commit -M "limpiando ~"
+: 1606109814:0;gdfiles commit -m "limpiando ~"
+: 1606109854:0;gdfiles add .config/install/instalacion.sh
+: 1606109862:0;gdfiles commit -m "limpiando ~+"
+: 1606109871:0;gdfiles push
+: 1606109887:0;clear
+: 1606110018:0;sensors | grep 'Tdie\|Tctl' | awk -F ' ' '{ print $2 }' | cut -c 2-8
+: 1606110023:0;clear
+: 1606110028:0;sensors
+: 1606110186:0;vim .config/install/instalacion.sh
+: 1606110523:0;vim /etc/sensors3.conf
+: 1606110752:94;sudo sensors-detect
+: 1606110851:0;sensors
+: 1606111094:0;modprobe it87
+: 1606111118:0;modprobe
+: 1606111122:0;modprobe -h
+: 1606111147:0;modprobe -n
+: 1606111167:0;man modprobe
+: 1606111182:0;modprobe a
+: 1606111188:0;sudo modprobe a
+: 1606111198:0;sudo modprobe -a
+: 1606111202:0;modprobe -a
+: 1606111205:0;man modprobe
+: 1606111234:0;modprobe --all
+: 1606111241:0;modprobe --all 
+: 1606111293:0;modprobe --all it8792-isa-0a60
+: 1606111312:0;modprobe it8
+: 1606111316:0;modprobe it87
+: 1606111323:0;modprobe -all it87
+: 1606111329:0;modprobe -a it87
+: 1606111342:0;cd /lib/modules
+: 1606111343:0;l
+: 1606111346:0;cd 5.9.9-arch1-1
+: 1606111347:0;l
+: 1606111359:0;cd kernel
+: 1606111360:0;l
+: 1606111366:0;cd drivers
+: 1606111367:0;l
+: 1606111396:0;thermal
+: 1606111397:0;l
+: 1606111407:0;..
+: 1606111416:0;cd hwmon
+: 1606111418:0;l
+: 1606111465:0;modprobe /kernel/drivers/it87
+: 1606111619:0;modprobe isa:ebc-c384_wdt
+: 1606111743:0;clear
+: 1606111745:0;l
+: 1606111748:0;cd..
+: 1606111750:0;.......
+: 1606111752:0;....
+: 1606111753:0;..
+: 1606111756:0;l
+: 1606111759:0;cd
+: 1606111760:0;cleare
+: 1606111762:0;clear
+: 1606111762:0;l
+: 1606111782:0;timedatectl status
+: 1606111802:0;localectl status
+: 1606111816:0;clear
+: 1606111817:0;l
+: 1606111819:0;lf
+: 1606111276:0;sensors
+: 1606112347:0;clear
+: 1606112350:0;ranger
+: 1606112353:0;clear
+: 1606112357:0;lf
+: 1606112463:0;htop
+: 1606112508:0;lf
+: 1606112633:0;ma lf
+: 1606112653:0;cd /usr/share/doc/lf
+: 1606112654:0;l
+: 1606112662:0;vim lfrc.example
+: 1606112796:0;clear
+: 1606112798:0;cd
+: 1606112800:0;psyu
+: 1606112805:0;update
+: 1606112810:0;pup
+: 1606112815:0;pupd
+: 1606340910:0;pins brave
+: 1606340951:0;paru -Ss brave
+: 1606340963:0;paru -S brave-bin
+: 1606346821:0;clear
+: 1606346824:0;lf
+: 1606346848:0;clear
+: 1606346850:0;l
+: 1606346858:0;cd yay
+: 1606346859:0;l
+: 1606346864:0;..
+: 1606346874:0;rd yay
+: 1606346877:0;l
+: 1606346883:0;exit
+: 1606450244:0;l
+: 1606450264:0;cat .fonts.conf
+: 1606450273:0;cd .pki
+: 1606450275:0;lsa
+: 1606450282:0;cd nssdb
+: 1606450284:0;ll
+: 1606450289:0;cat pkcs11.txt
+: 1606450296:0;...
+: 1606450299:0;l
+: 1606450300:0;la
+: 1606450302:0;ls
+: 1606450305:0;lsg
+: 1606450318:0;xrc
+: 1606450323:0;zrc
+: 1606450369:0;alias
+: 1606450448:0;tail -n 23 .zshrc
+: 1606450455:0;tail -n 24 .zshrc
+: 1606450464:0;tail -n 25 .zshrc
+: 1606450486:0;tail -n 24 .zshrc | sort -u
+: 1606450519:0;tail -n 24 .zshrc | sort
+: 1606450541:0;tail -n 24 .zshrc | sort -b
+: 1606450563:0;tail -n 24 .zshrc | sort -b >> .zshrc
+: 1606450565:0;zrc
+: 1606450770:0;exa -S
+: 1606450788:0;exa -ua
+: 1606450791:0;exa -ual
+: 1606450797:0;exa -ualS
+: 1606450854:0;exa -gla
+: 1606450861:0;exa -g
+: 1606450863:0;exa -ga
+: 1606450871:0;exa -gla
+: 1606450895:0;exa -gla /usr/bin
+: 1606450907:0;exa -glaF /usr/bin
+: 1606450921:0;exa -
+: 1606450933:0;exa -G
+: 1606450935:0;exa -Gx
+: 1606450945:0;exa -G /etc
+: 1606450949:0;exa -Gx /etc
+: 1606451013:0;exa --git-ignore -al
+: 1606451031:0;exa --git-ignore -alg
+: 1606451035:0;exa --git-ignore -al
+: 1606451053:0;exa --git
+: 1606451076:0;exa --git -al
+: 1606451091:0;exa --git -alh
+: 1606451103:0;cd .oh-my-zsh
+: 1606451105:0;exa --git -alh
+: 1606451119:0;exa --git-ignore -alh
+: 1606451132:0;exa --git --git-ignore -alh
+: 1606451140:0;cd
+: 1606451142:0;clear
+: 1606451167:0;exa -alhd
+: 1606451174:0;exa -alh
+: 1606451177:0;exa -d
+: 1606451182:0;exa -D
+: 1606451252:0;exa -alh
+: 1606451260:0;exa -alhb
+: 1606451596:0;tree
+: 1606451607:0;which tree
+: 1606451616:0;command tree
+: 1606451625:0;pacman -Qi tree
+: 1606451647:0;pacman -Rsn tree
+: 1606451651:0;tree
+: 1606451875:0;exa -t
+: 1606451878:0;exa -T
+: 1606451908:0;exa -T .
+: 1606451912:0;exa -T .config
+: 1606451954:0;exa -laT .config
+: 1606451981:0;exa -T .xmonad
+: 1606451985:0;exa -aT .xmonad
+: 1606451995:0;exa -alT .xmonad
+: 1606452001:0;exa -algT .xmonad
+: 1606452010:0;exa -alT .xmonad
+: 1606452035:0;exa -alFT .xmonad
+: 1606452106:0;zshe
+: 1606452227:0;alas
+: 1606452228:0;alias
+: 1606452236:0;l
+: 1606452239:0;ls
+: 1606452241:0;la
+: 1606452248:0;zrc
+: 1606452253:0;vim .zshrc
+: 1606452270:0;alias
+: 1606452289:0;l
+: 1606452291:0;ls
+: 1606452296:0;clear
+: 1606452297:0;ls
+: 1606452300:0;la
+: 1606452302:0;l
+: 1606452306:0;ll
+: 1606452312:0;la
+: 1606452313:0;ll
+: 1606452326:0;lsg
+: 1606452342:0;zrc
+: 1606452376:0;lsg
+: 1606452383:0;lsg -a
+: 1606452392:0;lsg -a --color
+: 1606452406:0;lsg -a --color=always
+: 1606452410:0;lsg -a
+: 1606452417:0;zrc
+: 1606452437:0;source .zshrc
+: 1606452439:0;lsg
+: 1606452445:0;clear
+: 1606452449:0;lsg
+: 1606452457:0;lsg /etc
+: 1606452464:0;ls /etc
+: 1606452468:0;la /etc
+: 1606452481:0;tree 
+: 1606452493:0;tree /usr/share|
+: 1606452495:0;tree /usr/share
+: 1606452642:0;tree /usr/share/zsh/functions/Completion/X
+: 1606452662:0;cd /usr/share/zsh/functions/Completion/X
+: 1606452673:0;ccat 
+: 1606452680:0;ccat _mupdf
+: 1606452686:0;alias ccat
+: 1606452719:0;colorize_less
+: 1606452727:0;colorize_less --help
+: 1606452744:0;colorize_less _acroread
+: 1606452755:0;vim _acroread
+: 1606452842:0;vim _pdftk
+: 1606452865:0;Zcd ..
+: 1606452866:0;ls
+: 1606452870:0;cd ..
+: 1606452871:0;ls
+: 1606452874:0;l
+: 1606452878:0;cd Zsh
+: 1606452878:0;ls
+: 1606452889:0;_alias
+: 1606452899:0;_alias l
+: 1606452904:0;..
+: 1606452907:0;la
+: 1606452910:0;cd Linux
+: 1606452911:0;l
+: 1606452915:0;ll
+: 1606452916:0;..
+: 1606452918:0;la
+: 1606452921:0;cd Base
+: 1606452921:0;la
+: 1606452928:0;cd
+: 1606452931:0;clear
+: 1606452941:0;l
+: 1606452949:0;cd Desktop
+: 1606452950:0;la
+: 1606452959:0;cat .directory
+: 1606452963:0;clear
+: 1606452968:0;..
+: 1606452974:0;mkdir test
+: 1606453001:0;gdfiles -add u
+: 1606453007:0;gdfiles add -u

@@ -11,10 +11,10 @@ export EDITOR='vim'
 export NAVEGADOR='firefox'
 export BROWSER='firefox'
 export VISUAL='vim'
-#export TERM='xterm-256color'
 export TERMINAL='alacritty'
-export LECTOR='mupdf'
+export LECTOR='zathura'
 export ARCHIVOS='ranger'
+export AUR_HELPER='paru'
 
 # variables XDG para direccionar dotfiles a ~/.config
 export XDG_CONFIG_HOME="$HOME/.config"
