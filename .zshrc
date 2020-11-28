@@ -88,6 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # Alias
+unalias l
 alias rd="rm -Rfv" \
 	alrc="$EDITOR ~/.config/alacritty/alacritty.yml" \
 	aurupd="$AUR_HELPER -Syyuu" \
@@ -112,8 +113,9 @@ alias rd="rm -Rfv" \
 	psea="pacman -Ss" \
 	plis="pacman -Q" \
 	tree="exa -alFT" \
+	vimrc="$EDITOR ~/.vimrc" \
 	x="sxiv -f" \
-	xdrc="$EDITOR ~/.config/xmobar/xmobarrc" \
+	xmbrc="$EDITOR ~/.config/xmobar/xmobarrc" \
 	xmrc="$EDITOR ~/.xmonad/xmonad.hs" \
 	zrc="$EDITOR ~/.zshrc" \
 	zshe="$EDITOR ~/.zshenv"

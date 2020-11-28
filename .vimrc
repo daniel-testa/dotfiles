@@ -35,6 +35,8 @@ source $VIMRUNTIME/defaults.vim
 au BufNewFile,BufRead *xmobarrc  setf haskell
 set number
 set relativenumber
+set background=dark
+colorscheme gruvbox
 highlight Comment cterm=italic
 
 if has("vms")
