@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
 
@@ -39,7 +39,9 @@ mkdir tmp_paru && \
 printf "${AZUL} Instalando paquetes de AUR...${SIN_COLOR}\n\n"
 sleep 1
 
-paru -Syu -q --nocleanmenu --nodiffmenu --noupgrademenu --noeditmenu --noconfirm --needed exa nerd-fonts-iosevka nerd-fonts-mononoki nerd-fonts-noto-sans-regular-complete nerd-fonts-terminus ttf-font-awesome vundle && \
+paru -Syu -q --nocleanmenu --nodiffmenu --noupgrademenu --noeditmenu --noconfirm --needed exa nerd-fonts-iosevka \
+	nerd-fonts-mononoki nerd-fonts-noto-sans-regular-complete nerd-fonts-terminus ttf-font-awesome \
+       	vim-colorschemes vundle && \
 	printf "${VERDE} Paquetes AUR instalados.${SIN_COLOR}\n\n"
 
 sleep 1
