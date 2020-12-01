@@ -62,11 +62,13 @@ function gdfiles {
 }
 printf "${AZUL}Checkingout dotfiles...${SIN_COLOR}\n\n"
 mkdir -p bkp
-gdfiles checkout
+#gdfiles checkout    # para corregir, incluir comando en loops if, while, listas && ||, siempre que no sea
+                     # el último comando de la lista
 
-if [[ $? == 0 ]]
+if [[ $(gdfiles checkout) == 0 ]]     # intento de corregir problema con set -e detiene el script con este error
 then
-        printf "${VERDE}Checkout correcto!!${SIN_COLOR}\n"
+        printf "${VERDE}Checkout correcto!!${SIN_COLOR}\n" && \
+		rm -rf bkp
 else
         printf " \n${ROJO}Atención!.. en el sistema hay archivos de configuracion previos!!${SIN_COLOR}\n"
         printf " \n${AZUL}Haciendo copia de seguridad de dot files preexistentes...${SIN_COLOR}\n"
@@ -79,7 +81,7 @@ else
         if [[ $? == 0 ]]
         then
                 printf "${VERDE}Se hizo copia de dotfiles preexistentes en la carpeta ${AZUL}$PWD/bkp ${SIN_COLOR}\n\n"
-                sleep 1
+                sleep 3
                 printf "${AZUL}Checkingout dotfiles...${SIN_COLOR}\n\n"
 
         gdfiles checkout && \
