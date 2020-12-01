@@ -7,6 +7,8 @@
 path+=('/home/daniel/.local/bin')
 export PATH
 
+export PAGER='/usr/share/vim/vim82/macros/less.sh'
+export MANPAGER='vim -M +MANPAGER -'
 export EDITOR='vim'
 export NAVEGADOR='firefox'
 export BROWSER='firefox'

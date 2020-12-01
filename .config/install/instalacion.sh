@@ -39,8 +39,8 @@ mkdir tmp_paru && \
 printf "${AZUL} Instalando paquetes de AUR...${SIN_COLOR}\n\n"
 sleep 1
 
-paru -Syu -q --nocleanmenu --nodiffmenu --noupgrademenu --noeditmenu --noconfirm --needed exa nerd-fonts-iosevka \
-	nerd-fonts-mononoki nerd-fonts-noto-sans-regular-complete nerd-fonts-terminus ttf-font-awesome \
+paru -Syu --quiet --cleanafter --nouseask --noconfirm --needed exa nerd-fonts-iosevka nerd-fonts-mononoki \
+	nerd-fonts-noto-sans-regular-complete nerd-fonts-terminus ttf-font-awesome \
        	vim-colorschemes vundle && \
 	printf "${VERDE} Paquetes AUR instalados.${SIN_COLOR}\n\n"
 
@@ -51,7 +51,7 @@ sleep 1
 printf "${AZUL}Clonando dotfiles desde github...${SIN_COLOR}\n"
 sleep 1
 
-git clone --bare https://github.com/daniel-testa/dotfiles.git $HOME/prueba/.dotfiles
+git clone --bare https://github.com/daniel-testa/dotfiles.git $HOME/.dotfiles
 if [[ $? == 0 ]]
 then
         printf "\n${VERDE}Clonacion correcta!!${SIN_COLOR}\n\n"
@@ -68,21 +68,21 @@ if [[ $? == 0 ]]
 then
         printf "${VERDE}Checkout correcto!!${SIN_COLOR}\n"
 else
-        printf " \n${ROJO}Error, en el sistema hay archivos de configuracion previos!!${SIN_COLOR}\n"
-        printf " \n${AZUL}Haciendo copia de seguridad de  dot files preexistentes...${SIN_COLOR}\n"
+        printf " \n${ROJO}Atención!.. en el sistema hay archivos de configuracion previos!!${SIN_COLOR}\n"
+        printf " \n${AZUL}Haciendo copia de seguridad de dot files preexistentes...${SIN_COLOR}\n"
         printf "${BLANCO}%s${SIN_COLOR}\n" "."
         printf "${BLANCO}%s${SIN_COLOR}\n" "."
         sleep 2
-        dfiles checkout 2>&1 | egrep "\s+\.|\/" | awk '{print $1}' | xargs -I '{}' rsync -a '{}' bkp/ && \
-        dfiles checkout 2>&1 | egrep "\s+\.|\/" | awk '{print $1}' | xargs -I '{}' rm -rf '{}'
+        gdfiles checkout 2>&1 | egrep "\s+\.|\/" | awk '{print $1}' | xargs -I '{}' rsync -a '{}' bkp/ && \
+        gdfiles checkout 2>&1 | egrep "\s+\.|\/" | awk '{print $1}' | xargs -I '{}' rm -rf '{}'
         
         if [[ $? == 0 ]]
         then
-                printf "${VERDE}Se hizo copia de dotfiles preexistentes en la carpeta ${AZU}$PWD/bkp ${SIN_COLOR}\n\n"
+                printf "${VERDE}Se hizo copia de dotfiles preexistentes en la carpeta ${AZUL}$PWD/bkp ${SIN_COLOR}\n\n"
                 sleep 1
                 printf "${AZUL}Checkingout dotfiles...${SIN_COLOR}\n\n"
 
-        dfiles checkout && \
+        gdfiles checkout && \
                 printf "${VERDE}Checkout correcto!!${SIN_COLOR}\n"
         fi
 fi
@@ -113,7 +113,7 @@ rm ohmyzsh_install.sh
 ############ activar servicios systemd
 
 printf "${AZUL} Activando Servicios${SIN_COLOR}\n\n"
-sleep 1
+sleep 2
 
 ## descomentar la sig. linea si se instala en virtualbox SO invitado
 sudo systemctl enable vboxservice.service &&\
