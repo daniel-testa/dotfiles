@@ -1,6 +1,6 @@
 export ZSH="/home/daniel/.oh-my-zsh"
 
-ZSH_THEME="hkxm"
+ZSH_THEME="daniel2"
 
 DISABLE_MAGIC_FUNCTIONS="true"
 
