@@ -10,6 +10,8 @@ HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.config/zsh/history
 
+ZSH_CUSTOM=$XDG_CONFIG_HOME/zsh
+
 plugins=(archlinux colorize)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
