@@ -1,6 +1,10 @@
-"""""""""""""""""""""""""""""""
-""" daniel testa 27-06-2019 """
-"""""""""""""""""""""""""""""""
+"   ___   _____ __ __ __ _____ __    ______ _____ _____ ______ _____
+"  |    \|  _  |   \ |__|   __|  |  |      |   __|   __|      |  _  |
+"  | |   |     |     |  |   __|  --;'_    _'   __|__   '_    _'     |
+"  |____/|__|__|__\__|__|_____|____|  |__| |_____|_____| |__| |__|__|
+"                  \-----
+"                   \27 de junio de 2019
+"
 set nocompatible              " be iMproved, necesario 
 filetype off                  " necesario
 
@@ -12,7 +16,8 @@ call vundle#begin()             " necesario, los plugins deben aparecer después
 Plugin 'gmarik/Vundle.vim'      " vundle
 Plugin 'ap/vim-css-color'       " Color previews for CSS
 Plugin 'Valloric/YouCompleteMe'
-
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'altercation/vim-colors-solarized'
 call vundle#end()		" necesario, los plugins deben aparecer antes de esta línea.
 
 filetype plugin indent on       " necesario
@@ -36,7 +41,7 @@ au BufNewFile,BufRead *xmobarrc  setf haskell
 set number
 set relativenumber
 set background=dark
-colorscheme dracula
+colorscheme solarized
 highlight Comment cterm=italic
 
 if has("vms")

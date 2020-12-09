@@ -1,20 +1,39 @@
+# ╔═════════════════════════════════╦═════════════════════════════════╗
+# ║ ___   _____ __ __ __ _____ __     ______ _____ _____ ______ _____ ║
+# ║|    \|  _  |   \ |__|   __|  |   |      |   __|   __|      |  _  |║
+# ║| |   |     |     |  |   __|  --; '_    _'   __|__   '_    _'     |║
+# ║|____/|__|__|__\__|__|_____|____|   |__| |_____|_____| |__| |__|__|║
+# ╠═════════════════════════════════╩═════════════════════════════════╣
+# ║  daniel.testa.t@gmail.com                                         ║
+# ╚═══════════════════════════════════════════════════════════════════╝
+
+## Variables
 export ZSH="/home/daniel/.oh-my-zsh"
 
+ZSH_CUSTOM=$XDG_CONFIG_HOME/zsh
 ZSH_THEME="daniel2"
 
+## Opciones
 DISABLE_MAGIC_FUNCTIONS="true"
-
 COMPLETION_WAITING_DOTS="true"
-
 HISTSIZE=1000
 SAVEHIST=1000
 HISTFILE=~/.config/zsh/history
 
-ZSH_CUSTOM=$XDG_CONFIG_HOME/zsh
+## Plugins
+plugins=(
+	archlinux
+       	colorize
+	comando-no-encontrado
+)
 
-plugins=(archlinux colorize)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH/oh-my-zsh.sh
+
+## Funciones
+function nf_icon () {
+	grep -i "$1" "$XDG_CONFIG_HOME/unicode_icons/nerd_fonts_unicode_icons"
+}
 
 # Alias
 unalias l
