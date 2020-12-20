@@ -1,0 +1,47 @@
+daniel testa 20 de diciembre de 2020
+
+archivos:
+^^^^^^^^
+latam_xsoul
+xkb_layout_symbols.png
+
+^ latam_xsoul es la versión modificada de /usr/share/X11/xkb/symbols/latam
+adaptada al teclado xsoul xk800 que es un teclado español latinoamericano
+con algunas etiquetas modificadas y probablemente erroneas. En particular:
+* <TLDE>, <AD11>, <AD12> y <AC11> cuyas etiquetas se corresponden con un 
+teclado español de españa.
+* <BKSL> cuya etiqueta corresponde al teclado inglés US
+
+^ xkb_layout_symbols.png es un esquema de los keycodes usados por xkb
+
+
+-----------------------------------------------------------------------------
+- Para agregar esta "nueva" distribución de teclado se debe copiar el
+ archivo latam_xsoul a la carpeta:
+
+/usr/share/X11/xkb/symbols (esta tarea requiere permiso root)
+
+y agregar la línea:
+
+"latam_xsoul     Spanish (Latin American-xsoul)"
+
+en la sección "! layout" del archivo:
+
+"/usr/share/X11/xkb/rules/base.lst" (esta tarea requiere permiso root)
+
+
+- Finalmente ejecutar el siguente comando para utilizarlo:
+
+"sudo localectl set-x11-keymap latam_xsoul pc104"
+
+o
+
+"sudo localectl set-x11-keymap latam_xsoul,latam pc104 grp:alt_shift_toggle"
+
+para cambiar entre latam y latam_xsoul al teclear Alt+Shift
+-----------------------------------------------------------------------------
+
+NOTA: Es necesario reiniciar el servidor X para que los cambios tengan efecto
+
+Para hacer: investigar la manera usar esta distribución desde la carpeta de usario
+sin permiso root (probablemente en ~/.local/share/X11/xkb/{rules,symbols} ?????)
