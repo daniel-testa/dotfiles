@@ -9,32 +9,38 @@
 # ┃mínimamente, salida a terminal  con color y subrayado.             ┃
 # ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-## agregar $HOME/.local/bin a la variable PATH
-path+=('/home/daniel/.local/bin')
-export PATH
-
-export PAGER='/usr/share/vim/vim82/macros/less.sh'
-export MANPAGER='vim -M +MANPAGER -'
-export EDITOR='vim'
-export NAVEGADOR='firefox'
-export BROWSER='firefox'
-export VISUAL='vim'
-export TERMINAL='alacritty'
-export LECTOR='zathura'
-export ARCHIVOS='ranger'
-export AUR_HELPER='paru'
-
-## variables XDG para direccionar dotfiles a ~/.config
+# variables XDG para direccionar dotfiles a ~/.config
+export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CACHE_HOME="$HOME/.cache"
 
-## limpiando ~ de dotfiles
+# limpiando ~ de dotfiles
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export LESSHISTFILE='-'
-export GTK2_RC_FILES=$XDG_CONFIG_HOME/gtk-2.0/gtkrc
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | so $MYVIMRC'
+export EDITOR='vim'
+export VISUAL='vim'
+export MANPAGER='vim -M +MANPAGER -'
+export PAGER='/usr/share/vim/vim82/macros/less.sh'
+
+export ARCHIVOS='ranger'
+export AUR_HELPER='paru'
+export BROWSER='firefox'
+export READER='zhatura'
+export NAVEGADOR='firefox'
+export TERMINAL='alacritty'
+
+# zsh  ***
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export HISTFILE="$ZDOTDIR/history"      # archivo historia de comandos
+export HISTSIZE=10000                   # maximo cantidad de eventos historia interna
+export SAVEHIST=10000                   # maxima cantidad de eventos en el archivo history
+
+#export LOCAL_BIN="$HOME/.local/bin"
+#export PATH="LOCAL_BIN:$PATH"
 
 
-## colores en less > y por lo tanto en man
+# colores en less > y por lo tanto en man
 export LESS_TERMCAP_mb=$'\E[01;31m'
 export LESS_TERMCAP_md=$'\E[01;31m'
 export LESS_TERMCAP_me=$'\E[0m'

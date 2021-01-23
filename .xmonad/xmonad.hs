@@ -184,8 +184,17 @@ myKeys =
 
      -- teclas especiales
         , ("<XF86Calculator>", runOrRaise "kcalc" (resource =? "kcalc"))
-        , ("<XF86HomePage>", runOrRaise "dolphin" (resource =? "dolphin"))
-        , ("<XF86Favorites>", spawn "firefox")
+        , ("<XF86Explorer>", runOrRaise "dolphin" (resource =? "dolphin"))
+        , ("<XF86HomePage>", spawn "firefox")
+    -- Teclas multimedia
+        , ("<XF86AudioPlay>", spawn "cmus-remote --pause")
+        , ("<XF86AudioStop>", spawn "cmus-remote --stop")
+        , ("<XF86AudioPrev>", spawn "cmus-remote --prev")
+        , ("<XF86AudioNext>", spawn "cmus-remote --next")
+        , ("<XF86AudioMute>", spawn "pacmd set-sink-mute alsa_output.pci-0000_07_00.6.analog-stereo false")
+        , ("<XF86AudioLowerVolume>", spawn "amixer set Master 5%- unmute")
+        , ("<XF86AudioRaiseVolume>", spawn "amixer set Master 5%+ unmute")
+        , ("<Print>", spawn "scrotd 0")
         ]
 
 ----     ATAJOS DEL MOUSE    ----
