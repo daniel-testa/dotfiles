@@ -104,6 +104,12 @@ bindkey -M vicmd v edit-command-line
 # En Modo viins, buscar en la historia de comandos a partir del textol ingresado 
 bindkey '^[[A' up-line-or-search        # cursor arriba
 bindkey '^[[B' down-line-or-search      # cursor abajo
+#bindkey '^[[A' history-incremental-pattern-search-backward  #cursor arriba
+#bindkey '^[[B' history-incremental-pattern-search-forward   # cursor abajo
+bindkey '^[[H' beginning-of-line-hist   # INICIO 
+bindkey '^[[F' end-of-line-hist         # FIN 
+
+
 
 # Cambia tecla escape con CapsLock (no se puede usar en notebook lenovo)
 #xmodmap -e "keycode 9 = Caps_Lock NoSymbol Caps_Lock"   #Usar escape como CapsLock

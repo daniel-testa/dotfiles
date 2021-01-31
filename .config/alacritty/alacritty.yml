@@ -12,7 +12,7 @@ scrolling:
 font:
   normal:
     family: mononoki Nerd Font
-    style: Bold
+    style: Regular
   bold:
     family: mononoki Nerd Font
     style: Bold

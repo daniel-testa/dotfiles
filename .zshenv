@@ -36,8 +36,7 @@ export HISTFILE="$ZDOTDIR/history"      # archivo historia de comandos
 export HISTSIZE=10000                   # maximo cantidad de eventos historia interna
 export SAVEHIST=10000                   # maxima cantidad de eventos en el archivo history
 
-#export LOCAL_BIN="$HOME/.local/bin"
-#export PATH="LOCAL_BIN:$PATH"
+export PATH=$HOME/.local/bin:$PATH
 
 
 # colores en less > y por lo tanto en man

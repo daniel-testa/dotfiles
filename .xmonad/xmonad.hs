@@ -34,6 +34,7 @@ import XMonad.Util.SpawnOnce
 import XMonad.Layout.ResizableTile
 import XMonad.Layout.Spiral
 import XMonad.Layout.SimplestFloat
+import XMonad.Layout.ThreeColumns
 
 -- Modificadores de Layout
 import XMonad.Layout.Spacing
@@ -235,6 +236,10 @@ espiral    = renamed [Replace "\xfa73 "]
              $ avoidStruts
              $ spiral (6/7)
 
+tresCol    = renamed [Replace "\xfa75 "]
+             $ avoidStruts
+             $ ThreeCol 1 (3/100) (1/2)
+
 flotante    = renamed [Replace "\xfa6b "]
              $ avoidStruts
              $ simplestFloat
@@ -245,7 +250,7 @@ flotante    = renamed [Replace "\xfa6b "]
 
 myLayout = T.toggleLayouts flotante $ mkToggle (NBFULL ?? NOBORDERS ?? EOT) myDefaultLayout
   where
-    myDefaultLayout = vertical ||| horizontal ||| completo ||| espiral ||| flotante
+    myDefaultLayout = vertical ||| horizontal ||| completo ||| espiral ||| tresCol ||| flotante
 
 
 ----    REGLAS PARA VENTANAS ESPECIFICAS    ----
@@ -288,7 +293,10 @@ main = do
         , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = hPutStrLn xmproc
                         , ppCurrent = xmobarColor "#fdf6e3" "" -- . wrap "\xe0d2" "\xe0d4"
+                        , ppVisible = xmobarColor "#6c71c4" ""
                         , ppHidden = xmobarColor "#839496" "" -- . wrap "\xe0b7" "\xe0b5"
+                        , ppHiddenNoWindows = xmobarColor "#6c71c4" ""
+                        , ppUrgent = xmobarColor "#C45500" "" . wrap "!" "!"
                         , ppLayout = xmobarColor "#6c71c4" "" 
                         , ppTitle = xmobarColor "#268bd2" "" . shorten 100
                         , ppSep = "<fc=#fdf6e3>  \xe0b1   </fc>"
